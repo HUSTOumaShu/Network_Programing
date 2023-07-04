@@ -16,7 +16,7 @@ int main()
 {
     struct dirent **namelist;
     int n;
-    n = scandir(".", &namelist, NULL, NULL);
+    n = scandir("/home/huytr", &namelist, NULL, NULL);
     if (n == -1)
     {
         printf("Error\n");
